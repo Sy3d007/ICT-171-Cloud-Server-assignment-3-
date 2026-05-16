@@ -26,3 +26,19 @@ Connect to the server from a Mac terminal:
 ```bash
 ssh -i ~/path/to/ict171-vm_key.pem azureuser@20.213.8.117
 ```
+
+## Web Server Installation
+
+Install Apache:
+
+```bash
+sudo apt install apache2 -y
+```
+
+Verify Apache is running:
+
+```bash
+sudo systemctl status apache2
+```
+
+Apache can be confirmed by visiting http://20.213.8.117 in a browser — the default Ubuntu Apache page should appear.

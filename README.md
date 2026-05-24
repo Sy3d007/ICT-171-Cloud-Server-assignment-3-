@@ -7,7 +7,7 @@ Unit: ICT171 Introduction to Server Environments and Architectures
 
 
 
-Project overview: This repository documents the setup for a cloud based web server on microsoft azure, The server will run 
+Project overview: This repository documents the setup of a cloud based anime review website hosted on Microsoft Azure. The server runs WordPress on a manually configured LAMP stack, featuring anime reviews, ratings, and recommendations organised by genre.
 
 # VM Setup
 
@@ -24,7 +24,7 @@ Project overview: This repository documents the setup for a cloud based web serv
 Connect to the server from a Mac terminal:
 
 ```bash
-ssh -i ~/path/to/ict171-vm_key.pem azureuser@20.213.8.117
+ssh -i ~/Desktop/ict171-vm_key.pem azureuser@20.213.8.117
 ```
 
 ## Web Server Installation
@@ -42,3 +42,5 @@ sudo systemctl status apache2
 ```
 
 Apache can be confirmed by visiting http://20.213.8.117 in a browser — the default Ubuntu Apache page should appear.
+
+

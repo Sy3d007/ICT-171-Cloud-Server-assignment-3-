@@ -137,3 +137,48 @@ sudo a2enmod rewrite
 sudo a2dissite 000-default.conf
 sudo systemctl restart apache2
 ```
+## WordPress Configuration
+
+Create the WordPress database and user in MySQL:
+
+```bash
+sudo mysql
+```
+
+```sql
+CREATE DATABASE wordpress_db;
+CREATE USER 'wp_user'@'localhost' IDENTIFIED BY 'your_password_here';
+GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wp_user'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+```
+
+## WordPress Browser Setup
+
+Visit `http://20.213.8.117` in a browser to launch the WordPress installer.
+
+- **Database Name:** `wordpress_db`
+- **Username:** `wp_user`
+- **Password:** your database password
+- **Database Host:** `localhost`
+- **Table Prefix:** `wp_`
+
+Complete the installation by setting:
+- **Site Title:** `Anime Reviews ICT171`
+- **Admin Username:** `admin`
+- **Admin Email:** your email
+
+WordPress dashboard is accessible at `http://20.213.8.117/wp-admin`
+
+## DNS Configuration
+
+Domain `animereviewict171.online` was registered via Namecheap.
+
+Two A records were added in Namecheap Advanced DNS:
+
+| Type | Host | Value |
+|------|------|-------|
+| A Record | @ | 20.213.8.117 |
+| A Record | www | 20.213.8.117 |
+
+DNS propagation can take up to 24 hours.

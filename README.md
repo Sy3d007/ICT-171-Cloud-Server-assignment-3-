@@ -43,4 +43,23 @@ sudo systemctl status apache2
 
 Apache can be confirmed by visiting http://20.213.8.117 in a browser — the default Ubuntu Apache page should appear.
 
+## Live Server
+
+- **Domain:** https://animereviewict171.online
+- **Server Status Page:** https://animereviewict171.online/server-status.html
+- **WordPress Admin:** https://animereviewict171.online/wp-admin
+
+## Video Explainer
+
+Link to be added once recorded.
+
+## Project Components
+
+- Cloud VM on Microsoft Azure (Australia East)
+- LAMP Stack (Linux, Apache, MySQL, PHP)
+- WordPress installed manually via SSH
+- Domain name configured (animereviewict171.online)
+- SSL/TLS via Let's Encrypt (certbot)
+- Custom bash script with verifiable web output
+- GitHub documentation with commit history
 
